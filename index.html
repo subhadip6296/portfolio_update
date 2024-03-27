@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7edf4709e8.js" crossorigin="anonymous"></script>
+    <link rel="icon" href=
+"https://media.istockphoto.com/id/1340928327/vector/s-letter-initial-luxurious-logo-template-premium-s-logo-golden-concept-s-letter-with-golden.jpg?s=612x612&w=0&k=20&c=cs5JSDxacR9TBxwbhgHlHivzQO7nZDtFe2fIRmYE2Wc="
+          type="image/x-icon">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/subhadip-nameslook1.jpg" class="logo">
+            
+            <ul id="sidemenu">
+                <li><a href="#header" class="bold">Home</a></li>
+                <li><a href="#about" class="bold">About</a></li>
+                <li><a href="#services" class="bold">Certifications</a></li>
+                <li><a href="#portfolio" class="bold">Projects</a></li>
+                <li><a href="#contact" class="bold">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        
+        <div class="header-text">
+            <h2 style="color: #050203; font-weight: 900;">Web Developer</h2>
+            <h1 class="change">Hi, I'm <span>Subhadip Mudi</span></h1>
+        </div>
+    </div>
+    <a href="#about">
+        <div class="scroll-button"></div>
+    </a>
+    
+</div>
+
+
+<!-- ---------------ABOUT----------------->
+<div id ="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/My_Picture-removebg-preview2-removebg-preview (1).png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is <span style="font-weight: bold;">Subhadip Mudi</span> from Dhanbad(Jharkhand), currently staying in Hyderabad. I am pursuing Bachelor of Technology(B.tech) in Computer Science and Engineering(CSE) from Malla Reddy Institute of Engineering
+                    and Technology. I am highly flexible and detail-oriented.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Achievments</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <!-- ---------------SKILLS----------------->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>Java, HTML, CSS, JavaScript</li>
+                        <li><span>Databases</span><br>MySQL</li>
+                        <li><span>Frameworks and Libraries</span><br>React.js, Bootstrap</li>
+                        <li><span>Platforms</span><br>Windows, Linux</li>
+                        <li><span>Version-control-system</span><br>Git and Github Software, Intellij, Visual Studio</li>
+                        <li><span>Soft Skills</span><br>Leadership, Event Management, Writing, Public Speaking, Flexible, Detail-oriented
+                        </li>
+                    </ul>
+                </div>
+                <!-- ---------------ACHIEVMENTS----------------->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Hackathon</span><br>Secured top 10 position in the Full Stack Web Development Hackathon conducted in College.</li>
+                        <li><span>Problem Solving</span><br>4 star Problem Solving on HackerRank.</li>
+                        <li><span>Coding Platforms</span><br>Solved 100+ Problems on various coding platforms.</li>
+                    </ul>
+                </div>
+                <!-- ---------------EDUCATION----------------->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>Matriculation from De Nobili School (Indian Certificate of Secondary Education)<br>Percentage : 81%</li>
+                        <li><span>2020</span><br>Intermediate from De Nobili School (Indian School Certificate)<br>Percentage : 80%</li>
+                        <li><span>2020-2024</span><br>B.tech in Computer Science and Engineering from Malla Reddy Institute of Engineering and Technology, Hyderabad<br>CGPA : 7.4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------SERVICES----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="services-list">
+            <div>
+                <a href="https://certificate.givemycertificate.com/c/7dd03b28-ee8f-40ba-8ce9-62225a8e684b"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                <h2>Full Stack Web Development(MERN)</h2>
+                <p>from upGrad Campus</p>
+            </div>
+            <div>
+                <a href="https://www.hackerrank.com/certificates/26508ea61151"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                <h2>Java</h2>
+                <p>from HackerRank</p>
+            </div>
+            <div>
+                <a href="https://www.hackerrank.com/certificates/848df2290ca6"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                <h2>Structured Query Language(SQL)</h2>
+                <p>from HackerRank</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------PORTFOLIO----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/p1.png" alt="image">
+                <div class="layer">
+                    <h3>SCRIBBLER PROJECT</h3>
+                    <p>Enables users to create and manage posts effortlessly.designed an intuitive user interface for creating, editing,
+                        and deleting posts, making content management seamless and accessible.<br><br>
+                        Technology Used: HTML, CSS and ES6 model JavaScript</p>
+                        <a href="https://subhadip6296.github.io/Scribbler_project/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p2.png" alt="image">
+                <div class="layer">
+                    <h3>SPOTIFY CLONE WEBSITE</h3>
+                    <p>Designed and developed a digital music streaming platform that offers users access to a diverse catalog of songs. Implemented controls for
+                        playing, pausing, skipping tracks, and adjusting the volume, enhancing the user experience and providing full
+                        control over the music listening experience.<br><br>
+                        Technology Used: HTML, CSS, DOM manipulation, ES6 model JavaScript</p>
+                        <a href="https://subhadip6296.github.io/Spotify_clone/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p3.png" alt="image">
+                <div class="layer">
+                    <h3>FLIPKART CLONE</h3>
+                    <p>E-commerce platform inspired by Flipkart, one of the leading online marketplaces. This clone will replicate key features of Flipkart, allowing users to browse products.<br><br>
+                        Technology Used: HTML, Cascading Style Sheet(CSS)</p>
+                        <a href="https://649e78d6e155e63af6142c81--starlit-pastelito-47d21f.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://github.com/subhadip6296?tab=repositories" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!-- ---------------CONTACT----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-envelope"></i>subhadipmudi20@gmail.com</p>
+                <p> <i class="fa-solid fa-mobile"></i>+91 6296485199</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/subhadip-mudi/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/SubhadipMu17200"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/subhadip6296"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/subhadip.mudi.35"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/subhadip_mudi/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://t.me/Subhadip_mudi"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.hackerrank.com/profile/subhadipmudi20"><i class="fa-brands fa-hackerrank"></i></a>
+                </div>
+                <a href="images/Resume_Subhadip_Mudi.pdf" download class="btn btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart-pulse"></i> by Subhadip</p>
+    </div>
+</div>
+
+
+<script>
+
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    let sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right="0";
+    }
+    function closemenu() {
+        sidemeu.style.right="-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyiT781KVKIy0E8T-yvgBbxZAwr0VmqhJfAI_f7WeL4QPAnv4_20hNP74iKgVdzO0HIIA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function() {
+                msg.innerHTML="";
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
